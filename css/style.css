@@ -1103,3 +1103,67 @@ ul.tweet-feed li a {
 	max-height: 44px;
 	margin-bottom: 15px;
  }
+
+
+
+ .worldwide-area{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 70px;
+ }
+ .location-worldwide{
+	border-radius: 5px;
+	box-shadow: 0px 4px 37.4px 0px rgba(29, 67, 154, 0.2);
+	background: rgb(255, 255, 255);
+	padding: 36px 42px; 
+ }
+ .location-title{
+	color: rgb(62, 119, 156);
+	font-size: 2rem;
+	font-weight: 600;
+	line-height: 48px;
+ }
+ .location-discribtion{
+	color: rgb(61, 70, 92);
+	font-size: 1.25rem;
+	font-weight: 400;
+	line-height: 30px;
+ }
+ .country-name{
+	color: rgb(62, 119, 156);
+	font-family:'Roboto';
+	font-size: 1.625rem;
+	font-weight: 700;
+	line-height: 25px;
+ }
+ .title-thum img{
+	width: 33px;
+	height: 25px;
+ }
+ .map img{
+	width: 100%;
+ }
+ .location img{
+	width: 33.17px;
+	height: 44.33px;
+	margin-right: 10px;
+ }
+ .location-name{
+	color: rgb(61, 70, 92);
+	font-family: 'Roboto';
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 23px;
+ }
+ .direction a{
+	box-sizing: border-box;
+	border: 2px solid rgb(62, 119, 156);
+	border-radius: 4px;
+	padding: 12px 16px;
+	color: rgb(62, 119, 156);
+	font-family: 'Roboto';
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 15px;
+	text-transform: uppercase;
+ }
