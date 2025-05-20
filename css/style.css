@@ -761,10 +761,12 @@ ul.tweet-feed li a {
 	padding: 20px 40px;
 	background: #fff;
 	bottom: 320px;
-	color: #3E779C;
-	font-size: 3rem;
-	font-weight: 600;
 	border-radius: 15px;
+	color: rgb(62, 119, 156);
+	font-family: 'Poppins';
+	font-size: 5rem;
+	font-weight: 600;
+	line-height: 120px;
 
   }
 .hero-text{
@@ -1072,4 +1074,32 @@ ul.tweet-feed li a {
  }
  .pack-care-width{
 	max-width: 160px;
+ }
+
+
+
+   /* ==========================================================
+  						contact us page style
+  ========================================================== */
+ .client-details{
+	padding: 30px 16px;
+ }
+ .contact-title{
+	color: rgb(62, 119, 156);
+	font-family: 'Poppins';
+	font-size: 1.25rem;
+	font-weight: 600;
+	line-height: 30px;
+	margin-bottom: 16px;
+ }
+ .client-details p{
+	color: rgb(61, 70, 92);
+	font-size: 1.25rem;
+	font-weight: 400;
+	line-height: 30px;
+ }
+ .client-details img{
+	max-width: 44px;
+	max-height: 44px;
+	margin-bottom: 15px;
  }
