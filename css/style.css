@@ -1029,9 +1029,9 @@ ul.tweet-feed li a {
 .pack-active{
     border-radius: 26px;
 	background: rgb(62, 119, 156);
-    padding:30px;
+    padding:40px;
     color: #fff;
-    top: -63px;
+    top: -125px;
 }
 .pack-active h3{
     color:#fff;
@@ -1047,6 +1047,8 @@ ul.tweet-feed li a {
 }
 .pack-active{
     position: relative;
+	padding-top: 140px;
+	padding-bottom: 80px;
 }
 .pack-active::before { 
     content: "MOST POPULAR";
@@ -1054,7 +1056,7 @@ ul.tweet-feed li a {
     border-radius: 20px;
     color:rgba(62, 119, 156, 1);
     position: absolute;
-    padding: 12px 20px;
+    padding: 16px 40px;
     top: 26px;
     right: 26px;
 	color: rgb(62, 119, 156);
@@ -1069,5 +1071,5 @@ ul.tweet-feed li a {
 	line-height: 19px;
  }
  .pack-care-width{
-	max-width: 200px;
+	max-width: 160px;
  }
