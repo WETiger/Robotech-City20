@@ -770,7 +770,7 @@ ul.tweet-feed li a {
 
   }
 .hero-text{
-	margin-top: 120px;
+	margin-top: 60px;
 }
 .hero-text p{
 	font-size: 1.25rem;
@@ -1103,13 +1103,20 @@ ul.tweet-feed li a {
 	max-height: 44px;
 	margin-bottom: 15px;
  }
+.contact-area{
+	margin-top: 120px;
+}
 
 
-
+/* location-worldwide-area */
+.location-worldwide-area{
+	margin: 70px 0;
+}
  .worldwide-area{
 	display: grid;
 	grid-template-columns: repeat(2,1fr);
 	gap: 70px;
+	margin: 50px 0;
  }
  .location-worldwide{
 	border-radius: 5px;
@@ -1135,6 +1142,7 @@ ul.tweet-feed li a {
 	font-size: 1.625rem;
 	font-weight: 700;
 	line-height: 25px;
+	margin-bottom: 25px;
  }
  .title-thum img{
 	width: 33px;
@@ -1142,6 +1150,8 @@ ul.tweet-feed li a {
  }
  .map img{
 	width: 100%;
+	margin-bottom: 25px;
+
  }
  .location img{
 	width: 33.17px;
@@ -1154,6 +1164,11 @@ ul.tweet-feed li a {
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 23px;
+	margin-top: 20px;
+ }
+ .direction{
+	
+	margin-top: 50px;
  }
  .direction a{
 	box-sizing: border-box;
@@ -1166,4 +1181,5 @@ ul.tweet-feed li a {
 	font-weight: 700;
 	line-height: 15px;
 	text-transform: uppercase;
+	text-decoration: none;
  }
