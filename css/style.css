@@ -146,11 +146,13 @@ Header Area
 	right: 0;
 	top: 0;
 	bottom: 0;
+	background: linear-gradient(88.32deg, rgb(20, 115, 156) 30.841%,rgba(115, 115, 115, 0) 60.326%);
 }
 .slider-content {
 	position: absolute;
 	top: 50%;
 	transform: translate(10%,-45%);
+	z-index: 1;
 	
 }
 
@@ -352,12 +354,11 @@ Footer Area
 */
 
 .footer {
-	margin-top: 120px;
+	margin-top: 50px;
 	background: #F8F9FA;
 
 }
 .footer .widget {
-	padding-top: 70px;
 	padding-right: 50px;
 }
 /* .footer .widget-one {
@@ -799,7 +800,7 @@ ul.tweet-feed li a {
 
 .still-have-section{
 	margin-top: 120px;
-	margin-bottom: 150px;
+	/* margin-bottom: 150px; */
 }
 .still-have-area{
 	background: #ECF2F6;
@@ -827,6 +828,7 @@ ul.tweet-feed li a {
 	border-radius: 5px;
 	padding: 19px;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+	height: 200px;
   }
   .sub-btn{
 	font-size: 2.25rem;
@@ -1183,3 +1185,191 @@ ul.tweet-feed li a {
 	text-transform: uppercase;
 	text-decoration: none;
  }
+ 
+
+
+
+/* ==========================================================
+  						about us page style
+  ========================================================== */
+/* commmon style of about  */
+
+ .about-title{
+	color: rgb(62, 119, 156);
+	font-family: 'Poppins';
+	font-size: 48px;
+	font-weight: 500;
+	line-height: 72px;
+ }
+
+/* what we do */
+ .what-we-do{
+	margin: 80px 0;
+ }
+
+
+ .we-do-text p{
+	color: rgb(61, 70, 92);
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 36px;
+ }
+ .find-us{
+	color: rgb(29, 67, 154);
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 36px;
+ }
+
+/* our-working-area */
+	.our-working-area{
+		margin: 60px 0 115px;
+	}
+
+    .timeline {
+      position: relative;
+      max-width: 1030px;
+      margin: 140px auto 0;
+      padding: 20px 0;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+	  border-left: 5px dashed rgb(62, 119, 156);
+      background-color: transparent;
+      top: 40px;
+      bottom: 380px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 0;
+    }
+
+    .timeline-step {
+      position: relative;
+      width: 50%;
+      padding: 10px 30px;
+	  margin-bottom: 130px;
+    }
+
+    .timeline-step-left {
+      left: 0;
+      text-align: right;
+    }
+
+    .timeline-step-right {
+      left: 50%;
+      text-align: left;
+    }
+
+    .timeline-content {
+      background: none;	  
+	  margin: 0 61px;
+    }
+
+    .timeline-step h5 {
+      color: rgb(62, 119, 156);
+	font-size: 3rem;
+	font-weight: 600;
+	line-height: 72px;
+      margin-bottom: 10px;
+    }
+
+    .timeline-step p {
+      color: rgb(61, 70, 92);
+	font-size: 1.25rem;
+	font-weight: 500;
+	line-height: 30px;
+    }
+
+    .timeline-circle {
+      position: absolute;
+      top: 18px;
+      width: 56px;
+	  height: 56px;
+      background: rgb(62, 119, 156);
+      border-radius: 50%;
+      z-index: 2;
+    }
+
+    .timeline-step-left .timeline-circle {
+      right: -28px;
+    }
+	
+    .timeline-step-right .timeline-circle  {
+      left: -28px;
+    }
+	.timeline-step-right .timeline-4-border  {
+      left: -40px;
+    }
+    /* Step 4 - outlined circle */
+    .timeline-step.step-4 .timeline-4-border {
+      border: 3px solid #2b6a94;
+	  position: absolute;
+      top: 7px;
+      width: 79px;
+	  height: 79px;
+      border-radius: 50%;
+      z-index: 2;
+    }
+
+    .btn-custom {
+      display: block;
+      margin: 30px auto 60px;
+      padding: 18px 25px;
+      color: rgb(255, 255, 255);
+		font-size: 1.5rem;
+		font-weight: 500;
+		line-height: 36px;
+		border-radius: 13px;
+	background: rgb(62, 119, 156);
+      border: none;
+    }
+.still-about{
+	border-radius: 10px;
+	background: rgb(248, 250, 255);
+}
+
+.our-working-portf{
+	margin-top: 200px;
+}
+.our-working{
+	padding: 60px 0;
+}
+.our-working-thum{
+	max-width: 356px;
+}
+.our-working-thum img{
+	width: 100%;
+}
+.text-left{
+	display: inline-block;
+	color: rgb(255, 255, 255);
+	font-family: 'Roboto';
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 150%;
+	padding: 16px 80px;
+	margin-top: 83px;
+}
+.about-discribtion{
+	color: rgb(61, 70, 92);
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 36px;
+}
+   /* ==========================================================
+  						contact us page style
+  ========================================================== */
+
+  
+   /* ==========================================================
+  						contact us page style
+  ========================================================== */
+
+
+  
+   /* ==========================================================
+  						contact us page style
+  ========================================================== */

@@ -51,6 +51,26 @@
 	    max-width: 100%;
 	    margin-bottom: 0;
 	}
+	.timeline::after {
+        left: 20px;
+      }
+
+      .timeline-step {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 20px;
+        text-align: left !important;
+      }
+
+      .timeline-step-left,
+      .timeline-step-right {
+        left: 0;
+      }
+
+      .timeline-circle {
+        left: 20px !important;
+      }
 
 }
+
 
