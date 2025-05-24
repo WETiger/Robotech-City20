@@ -9,6 +9,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- fontAwesome -->
     <link rel="stylesheet" href="../css/all.min.css">
     <!-- Google Font -->
@@ -28,8 +29,6 @@
     <link rel="stylesheet" href="../css/style.css">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="../css/responive.css">
-
-    <script src="../jquery-3.4.1.min.js"></script>
 
   </head>
   <body>
@@ -173,6 +172,48 @@
 
               </div>
            </section>
+<!-- your need  start-->
+   <div class="container py-5">
+      <div class="row g-5 align-items-start">
+        <!-- Left Content -->
+        <div class="col-lg-7">
+          <h2 class="need-title mb-3">Your Need, Our Responsibility</h2>
+          <p class="about-discribtion mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          </p>
+          <div class="row">
+            <div class="col-6 mb-3">
+              <div class="stat-number" data-target="700">0+</div>
+              <div class="stat-label">Solution Provided</div>
+            </div>
+            <div class="col-6 mb-3">
+              <div class="stat-number" data-target="200">0+</div>
+              <div class="stat-label">Industry Connected</div>
+            </div>
+            <div class="col-6  mb-3">
+              <div class="stat-number" data-target="1000">0+</div>
+              <div class="stat-label">Satisfied Client</div>
+            </div>
+            <div class="col-6  mb-3">
+              <div class="stat-number" data-target="100">0+</div>
+              <div class="stat-label">Industry Expert</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Contact Box -->
+        <div class="col-lg-4">
+          <div class="contact-box">
+            <h4>CONTACT US</h4>
+            <p>We are here to answer any question you may have about our service. We will respond as soon as we can.</p>
+            <button>Contact Us Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- your need end -->
+  
 <!-- Our Working Portfolios area  start-->
       <section class="our-working-portf">
         <div class="container">
@@ -357,27 +398,54 @@
     </footer>
 <!-- /Footer Area End -->
 
+
 <!--JavaScript -->
+
+    <script src="../jquery-3.4.1.min.js"></script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-<script src="../js/popper.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/all.min.js"></script>
+    
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/all.min.js"></script>
 <!-- ionicons -->
-<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-<!-- MixItUp -->
-<script src="../js/mixitup.min.js"></script>
-<!-- fancybox js -->
-<script src="../js/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 <!-- owl js -->
-<script src="../js/owl.carousel.min.js"></script>
-<!-- WoW -->
-<script src="../js/wow.min.js"></script>
-
+    <script src="../js/owl.carousel.min.js"></script>
+    
 <!-- Custom JS -->
-<script src="../js/custom.js"></script>
+    <script src="../js/custom.js"></script>
+<script>
+  const counters = document.querySelectorAll('.stat-number');
 
+  const animateCounter = (el, target) => {
+    let count = 0;
+    const step = Math.ceil(target / 100);
+    const interval = setInterval(() => {
+      count += step;
+      if (count >= target) {
+        count = target;
+        clearInterval(interval);
+      }
+      el.textContent = `${count}+`;
+    }, 20);
+  };
 
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = +el.getAttribute('data-target');
+        animateCounter(el, target);
+        observer.unobserve(el);
+      }
+    });
+  }, {
+    threshold: 0.5
+  });
 
-</body>
+  counters.forEach(counter => observer.observe(counter));
+</script>
+   
+
+  </body>
 </html>

@@ -1326,6 +1326,70 @@ ul.tweet-feed li a {
 	background: rgb(62, 119, 156);
       border: none;
     }
+
+
+
+.need-title  {
+      color: rgb(62, 119, 156);
+font-size: 3rem;
+font-weight: 600;
+line-height: 72px;
+    }
+    .text-muted-custom {
+      color: #6c757d;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    .stat-number {
+      color: rgb(62, 119, 156);
+font-size: 4rem;
+font-weight: 600;
+line-height: 96px;
+    }
+    .stat-label {
+      color: rgb(151, 151, 151);
+font-family: Poppins;
+font-size: 1.5rem;
+font-weight: 400;
+line-height: 36px;
+    }
+    .contact-box {
+      background-color: #2b6a94;
+      color: #ffffff;
+      border-radius: 15px;
+      padding: 40px 30px;
+      text-align: center;
+	  margin-top: 46px;
+    }
+    .contact-box h4 {
+     color: rgb(255, 255, 255);
+	font-size: 3rem;
+	font-weight: 600;
+	line-height: 72px;
+    }
+    .contact-box p {
+      color: rgb(255, 255, 255);
+		font-size: 2rem;
+		font-weight: 400;
+		line-height: 48px;
+    }
+    .contact-box button {
+      background-color: #ffffff;
+     color: rgb(62, 119, 156);
+	font-size: 1.25rem;
+	font-weight: 600;
+	line-height: 30px;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+
+
+
+
+
 .still-about{
 	border-radius: 10px;
 	background: rgb(248, 250, 255);

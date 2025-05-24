@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Perfect Count Up</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+    .title {
+      color: #2b4d6e;
+      font-weight: 700;
+    }
+    .text-muted-custom {
+      color: #6c757d;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    .stat-number {
+      color: #2b6a94;
+      font-weight: 700;
+      font-size: 28px;
+    }
+    .stat-label {
+      color: #999;
+      font-size: 14px;
+    }
+    .contact-box {
+      background-color: #2b6a94;
+      color: #ffffff;
+      border-radius: 15px;
+      padding: 40px 30px;
+      text-align: center;
+    }
+    .contact-box h4 {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .contact-box p {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    .contact-box button {
+      background-color: #ffffff;
+      color: #2b6a94;
+      font-weight: 600;
+      font-size: 13px;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container py-5">
+  <div class="row g-5 align-items-start">
+    <!-- Left Content -->
+    <div class="col-lg-7">
+      <h2 class="title mb-3">Your Need, Our Responsibility</h2>
+      <p class="text-muted-custom mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+      </p>
+      <div class="row text-center">
+        <div class="col-6 col-md-3 mb-3">
+          <div class="stat-number" data-target="700">0+</div>
+          <div class="stat-label">Solution Provided</div>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <div class="stat-number" data-target="200">0+</div>
+          <div class="stat-label">Industry Connected</div>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <div class="stat-number" data-target="1000">0+</div>
+          <div class="stat-label">Satisfied Client</div>
+        </div>
+        <div class="col-6 col-md-3 mb-3">
+          <div class="stat-number" data-target="100">0+</div>
+          <div class="stat-label">Industry Expert</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Contact Box -->
+    <div class="col-lg-5">
+      <div class="contact-box">
+        <h4>CONTACT US</h4>
+        <p>We are here to answer any question you may have about our service. <br>We will respond as soon as we can.</p>
+        <button>Contact Us Now</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const counters = document.querySelectorAll('.stat-number');
+
+  const animateCounter = (el, target) => {
+    let count = 0;
+    const step = Math.ceil(target / 100);
+    const interval = setInterval(() => {
+      count += step;
+      if (count >= target) {
+        count = target;
+        clearInterval(interval);
+      }
+      el.textContent = `${count}+`;
+    }, 20);
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = +el.getAttribute('data-target');
+        animateCounter(el, target);
+        observer.unobserve(el);
+      }
+    });
+  }, {
+    threshold: 0.5
+  });
+
+  counters.forEach(counter => observer.observe(counter));
+</script>
+
+</body>
+</html>
